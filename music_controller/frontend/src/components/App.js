@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
+import HomePage from "./HomePage";
 
-function App() {
+function App(props) {
   //   const [filters, setFilters] = useState({});
   //   const [data, setData] = useState({ items: [] });
 
@@ -15,11 +16,11 @@ function App() {
 
   return (
     <div>
-      <h1>Test React Code</h1>
+      <HomePage />
     </div>
   );
 }
 export default App;
 
 const appDiv = document.getElementById("app");
-render(<App />, appDiv);
+render(<App name="Conor" />, appDiv);
